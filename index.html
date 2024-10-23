@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visa and College Application Services by Pilgrim">
+    <title>Pilgrim - Visa & College Application Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Adding an overlay to soften the background for better readability */
+        .overlay {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent white overlay */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .logo-text {
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content strong {
+            color: #0056b3;
+        }
+
+        .dropdown {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+
+        .contact {
+            margin-top: 40px;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #777;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.webp" alt="Pilgrim Logo">
+        <div class="logo-text">Pilgrim - Visa & College Application Services</div>
+    </div>
+</header>
+
+<div class="overlay">
+    <div class="content">
+        <p id="description-1">
+            Unlock Your Future with Expert Visa and College Application Assistance. At Pilgrim, we’re passionate about helping you achieve your dreams, whether it’s visiting the U.S. or studying in your dream college abroad. With firsthand experience navigating the visa and application processes, we are here to make it as smooth and stress-free as possible.
+        </p>
+
+        <p id="description-2">
+            <strong>Visa Services:</strong> We offer tailored support for U.S. tourist and student visa applications. From filling out forms like the DS-160 to preparing you for your embassy interview, we ensure every detail is handled professionally. Whether you need assistance with documentation, booking embassy appointments, or understanding the application process, we’re here to guide you every step of the way.
+        </p>
+
+        <p id="description-3">
+            <strong>College Application Guidance:</strong> Ready to take the next step toward your academic dreams? We’ll help you find the perfect college, secure scholarships, and assist with work papers so that you can land your ideal job after graduation. With our expertise, you’ll be on your way to a successful future in no time.
+        </p>
+
+        <p id="description-4">
+            <strong>Why Choose Us?</strong> With years of experience in visa and college application processes, we know the ins and outs. We’ve been through it ourselves, and we’re passionate about helping others achieve success. Whether you're applying for a visa or a college, we understand how important this is for your future, and we’re here to make it happen.
+        </p>
+
+        <div class="dropdown">
+            <label for="languageSelect">Choose Language:</label>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="fa">Persian</option>
+                <option value="es">Spanish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+            </select>
+        </div>
+
+        <div class="contact">
+            <div>
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+                <a href="https://wa.me/123456789">+123 456 789</a>
+            </div>
+            <div>
+                <img src="instagram-icon.png" alt="Instagram">
+                <a href="https://instagram.com/yourusername">@yourusername</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Pilgrim - Visa & College Application Services. All rights reserved.</p>
+</footer>
+
+<script>
+    const descriptions = {
+        en: {
+            description1: "Unlock Your Future with Expert Visa and College Application Assistance. At Pilgrim, we’re passionate about helping you achieve your dreams, whether it’s visiting the U.S. or studying in your dream college abroad. With firsthand experience navigating the visa and application processes, we are here to make it as smooth and stress-free as possible.",
+            description2: "Visa Services: We offer tailored support for U.S. tourist and student visa applications. From filling out forms like the DS-160 to preparing you for your embassy interview, we ensure every detail is handled professionally. Whether you need assistance with documentation, booking embassy appointments, or understanding the application process, we’re here to guide you every step of the way.",
+            description3: "College Application Guidance: Ready to take the next step toward your academic dreams? We’ll help you find the perfect college, secure scholarships, and assist with work papers so that you can land your ideal job after graduation. With our expertise, you’ll be on your way to a successful future in no time.",
+            description4: "Why Choose Us? With years of experience in visa and college application processes, we know the ins and outs. We’ve been through it ourselves, and we’re passionate about helping others achieve success. Whether you're applying for a visa or a college, we understand how important this is for your future, and we’re here to make it happen."
+        },
+        fa: {
+            description1: "باز کن آینده خود را با کمک تخصصی در درخواست ویزا و پذیرش کالج. در Pilgrim، ما مشتاقانه به شما کمک می‌کنیم تا به رویاهای خود برسید، چه بازدید از ایالات متحده یا تحصیل در کالج رویایی شما. با تجربه دست اول در مراحل درخواست ویزا و پذیرش، این فرآیند را برای شما ساده و بدون استرس خواهیم کرد.",
+            description2: "خدمات ویزا: ما پشتیبانی تخصصی برای درخواست‌های ویزای گردشگری و دانشجویی ایالات متحده ارائه می‌دهیم. از تکمیل فرم‌های مانند DS-160 گرفته تا آماده‌سازی شما برای مصاحبه در سفارت، ما مطمئن می‌شویم که هر جزئیات به صورت حرفه‌ای مدیریت شود.",
+            description3: "راهنمایی پذیرش کالج: آماده‌اید گام بعدی به سوی رویاهای تحصیلی خود را بردارید؟ ما به شما کمک می‌کنیم تا کالج مناسب را پیدا کنید، بورس‌های تحصیلی بگیرید و با مقالات کاری برای شما شغل ایده‌آل پس از فارغ‌التحصیلی را فراهم کنیم.",
+            description4: "چرا ما را انتخاب کنید؟ با سال‌ها تجربه در فرآیندهای درخواست ویزا و پذیرش کالج، ما جزئیات را به خوبی می‌دانیم. ما خودمان این مراحل را پشت سر گذاشته‌ایم و مشتاقانه به دیگران کمک می‌کنیم تا به موفقیت برسند."
+        },
+        es: {
+            description1: "Desbloquea tu futuro con asistencia experta en solicitudes de visa y admisiones universitarias. En Pilgrim, nos apasiona ayudarte a alcanzar tus sueños, ya sea visitando EE.UU. o estudiando en la universidad de tus sueños.",
+            description2: "Servicios de Visado: Ofrecemos apoyo personalizado para solicitudes de visados turísticos y de estudiantes a los EE.UU. Desde completar formularios como el DS-160 hasta prepararte para tu entrevista en la embajada.",
+            description3: "Orientación para la Aplicación Universitaria: ¿Listo para dar el siguiente paso hacia tus sueños académicos? Te ayudaremos a encontrar la universidad perfecta, conseguir becas y trabajar para que consigas tu trabajo ideal tras la graduación.",
+            description4: "¿Por qué Elegirnos? Con años de experiencia en procesos de solicitudes de visas y aplicaciones universitarias, conocemos los detalles. Hemos pasado por ello nosotros mismos, y estamos apasionados por ayudar a otros a lograr el éxito."
+        },
+        pt: {
+            description1: "Desbloqueie seu futuro com assistência especializada para vistos e inscrições em faculdades. Na Pilgrim, somos apaixonados por ajudar você a alcançar seus sonhos, seja visitando os EUA ou estudando na sua faculdade dos sonhos.",
+            description2: "Serviços de Visto: Oferecemos suporte personalizado para solicitações de visto de turismo e estudante dos EUA. Desde preencher formulários como o DS-160 até prepará-lo para sua entrevista na embaixada, garantimos que cada detalhe seja tratado de forma profissional.",
+            description3: "Orientação para Aplicação Universitária: Pronto para dar o próximo passo em direção aos seus sonhos acadêmicos? Vamos ajudá-lo a encontrar a faculdade perfeita, garantir bolsas de estudo e ajudá-lo a conseguir o emprego ideal após a graduação.",
+            description4: "Por Que Escolher-nos? Com anos de experiência nos processos de solicitação de visto e de faculdade, sabemos os detalhes. Passamos por isso e estamos apaixonados em ajudar os outros a alcançar o sucesso."
+        },
+        ru: {
+            description1: "Откройте своё будущее с экспертной помощью в оформлении виз и подаче заявлений в университеты. В Pilgrim мы страстно хотим помочь вам достичь ваших мечт, будь то поездка в США или учеба в университете вашей мечты.",
+            description2: "Визовые услуги: Мы предлагаем индивидуальную поддержку для туристических и студенческих виз в США. От заполнения форм, таких как DS-160, до подготовки к интервью в посольстве.",
+            description3: "Консультации по подаче в университеты: Готовы сделать следующий шаг к своим академическим мечтам? Мы поможем вам найти идеальный университет, получить стипендии и трудоустроиться после окончания.",
+            description4: "Почему выбрать нас? Имея многолетний опыт в оформлении виз и подаче заявлений в университеты, мы знаем все тонкости. Мы сами прошли этот путь и страстно помогаем другим добиться успеха."
+        }
+    };
+
+    document.getElementById('languageSelect').addEventListener('change', function () {
+        const selectedLanguage = this.value;
+        document.getElementById('description-1').textContent = descriptions[selectedLanguage].description1;
+        document.getElementById('description-2').textContent = descriptions[selectedLanguage].description2;
+        document.getElementById('description-3').textContent = descriptions[selectedLanguage].description3;
+        document.getElementById('description-4').textContent = descriptions[selectedLanguage].description4;
+    });
+</script>
+
+</body>
+</html>
